@@ -5,6 +5,7 @@
     <groupId>com.manjambo.selenium</groupId>
   <artifactId>parallel</artifactId>
   <version>0.0.1</version>
+    <packaging>jar</packaging>
   <!-- DEPENDENCY -->
   <dependencies>
     <dependency>
