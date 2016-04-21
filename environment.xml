@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environments>
+    <environment name="vagrant">
+        <machines>
+            <machine name="127.0.0.1:33389" knownAs="SS" ip="127.0.0.1:33389"
+                deploy-path="\test\deployers\" deploy-dir="c:" batch-path="\test\batch\jobs\"
+                batch-dir="c:"/>
+        </machines>
+        <artefacts>
+            <artefact name="TestDeployer" machine="SS" type="deploy"/>
+            <artefact name="TestJob" machine="SS" type="batch"/>
+        </artefacts>
+    </environment>
+    <environment name="CD">
+        <machines>
+            <machine name="MSILM-SMP-D-I01" knownAs="SOA" ip="10.25.113.112 "
+                deploy-path="\deployers\" deploy-dir="d:" batch-path="\batch\job\" batch-dir="e:"/>
+            <machine name="MSILM-SMP-D-A01" knownAs="ESB" ip="10.25.113.72"
+                deploy-path="\deployers\" deploy-dir="e:" batch-path="" batch-dir=""/>
+        </machines>
+        <artefacts>
+            <artefact name="ActivitiBPMNDeployer_LogEnquiry" machine="SOA" type="deploy"/>
+            <artefact name="ActivitiBPMNDeployer_PIF" machine="SOA" type="deploy"/>
+            <artefact name="ClientCore" machine="SOA" type="deploy"/>
+            <artefact name="EarnedPremiumMonthEndJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="EDSMongoDBDeployer" machine="SOA" type="deploy"/>
+            <artefact name="FinanceServiceJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MasterDataServiceDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIP2DataExportJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIP2PIFDailyReportingDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIP2PIFMonthlyReportingDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIPExtensionBatchSegmentDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIPExtensionEarnedPremiumBatchJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIPUserSyncDeployer" machine="SOA" type="deploy"/>
+            <artefact name="PIFMigrationToolDeployer" machine="SOA" type="deploy"/>
+            <artefact name="ProcessPlatformToolsDeployer" machine="SOA" type="deploy"/>
+            <artefact name="ReinsuranceUIDeployer" machine="SOA" type="deploy"/>
+            <artefact name="SolrClientIndexJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="SolrCoreDeployer-ClientCore" machine="SOA" type="deploy"/>
+            <artefact name="UnderwritingSSearchAppDeployer" machine="SOA" type="deploy"/>
+            <artefact name="UndewritingSSearchETLMSIPJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="UnderwritingUIDeployer" machine="SOA" type="deploy"/>
+            <artefact name="EarnedPremiumMonthEndJob" machine="SOA" type="batch"/>
+            <artefact name="ESearch_loader" machine="SOA" type="batch"/>
+            <artefact name="MSIP2PIFDailyReportingJob" machine="SOA" type="batch"/>
+            <artefact name="MSIP2PIFMonthlyReportingJob" machine="SOA" type="batch"/>
+            <artefact name="MSIPExtensionEarnedPremiumBatchJob" machine="SOA" type="batch"/>
+            <artefact name="MSIPExtensionSegmentJob" machine="SOA" type="batch"/>
+            <artefact name="MSIPUserSync" machine="SOA" type="batch"/>
+            <artefact name="SSearchMSIPLoader" machine="SOA" type="batch"/>
+            <artefact name="ActiveMQDeployer" machine="ESB" type="deploy"/>
+            <artefact name="BPMSUserServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="MSIPExtensionServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="MSIPLookupServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="MuleCommunityApplicationDeployer - meds-dispatcher" machine="ESB"
+                type="deploy"/>
+            <artefact name="MuleCommunityApplicationDeployer - msip-enterprise-event-router"
+                machine="ESB" type="deploy"/>
+            <artefact name="MuleCommunityApplicationDeployer - pif-process-dispatcher" machine="ESB"
+                type="deploy"/>
+            <artefact name="UnderwritingFormServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="UnderwritingProcessServiceDeployer" machine="ESB" type="deploy"/>
+        </artefacts>
+    </environment>
+    <environment name="TEST4">
+        <machines>
+            <machine name="MSILM-SOA-T-D03" knownAs="SOA" ip="10.25.113.109"
+                deploy-path="\deployers\" deploy-dir="d:" batch-path="\batch\jobs\" batch-dir="d:"/>
+            <machine name="MSILM-SOA-T-A03" knownAs="ESB" ip="10.25.113.137"
+                deploy-path="\deployers\" deploy-dir="e:" batch-path="" batch-dir=""/>
+            <machine name="MSILM-MSP-T-A04" knownAs="MSIPAPP" ip="10.25.113.50" deploy-path=""
+                batch-path="" batch-dir=""/>
+            <machine name="MSILM-MSP-T-D02" knownAs="MSIPDB" ip="10.25.113.31" deploy-path=""
+                batch-path="" batch-dir=""/>
+        </machines>
+        <artefacts>
+            <artefact name="ActivitiBPMNDeployer_LogEnquiry" machine="SOA" type="deploy"/>
+            <artefact name="ActivitiBPMNDeployer_PIF" machine="SOA" type="deploy"/>
+            <artefact name="ClientCore" machine="SOA" type="deploy"/>
+            <artefact name="EarnedPremiumMonthEndJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="EDSMongoDBDeployer" machine="SOA" type="deploy"/>
+            <artefact name="FinanceServiceJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MasterDataServiceDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIP2DataExportJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIP2PIFDailyReportingDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIP2PIFMonthlyReportingDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIPExtensionBatchSegmentDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIPExtensionEarnedPremiumBatchJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="MSIPUserSyncDeployer" machine="SOA" type="deploy"/>
+            <artefact name="PIFMigrationToolDeployer" machine="SOA" type="deploy"/>
+            <artefact name="ProcessPlatformToolsDeployer" machine="SOA" type="deploy"/>
+            <artefact name="ReinsuranceUIDeployer" machine="SOA" type="deploy"/>
+            <artefact name="SolrClientIndexJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="SolrCoreDeployer-ClientCore" machine="SOA" type="deploy"/>
+            <artefact name="UnderwritingSSearchAppDeployer" machine="SOA" type="deploy"/>
+            <artefact name="UndewritingSSearchETLMSIPJobDeployer" machine="SOA" type="deploy"/>
+            <artefact name="UnderwritingUIDeployer" machine="SOA" type="deploy"/>
+            <artefact name="EarnedPremiumMonthEndJob" machine="SOA" type="batch"/>
+            <artefact name="ESearch_loader" machine="SOA" type="batch"/>
+            <artefact name="MSIP2PIFDailyReportingJob" machine="SOA" type="batch"/>
+            <artefact name="MSIP2PIFMonthlyReportingJob" machine="SOA" type="batch"/>
+            <artefact name="MSIPExtensionEarnedPremiumBatchJob" machine="SOA" type="batch"/>
+            <artefact name="MSIPExtensionSegmentJob" machine="SOA" type="batch"/>
+            <artefact name="MSIPUserSync" machine="SOA" type="batch"/>
+            <artefact name="SSearchMSIPLoader" machine="SOA" type="batch"/>
+            <artefact name="ActiveMQDeployer" machine="ESB" type="deploy"/>
+            <artefact name="BPMSUserServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="MSIPExtensionServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="MSIPLookupServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="MuleCommunityApplicationDeployer - meds-dispatcher" machine="ESB"
+                type="deploy"/>
+            <artefact name="MuleCommunityApplicationDeployer - msip-enterprise-event-router"
+                machine="ESB" type="deploy"/>
+            <artefact name="MuleCommunityApplicationDeployer - pif-process-dispatcher" machine="ESB"
+                type="deploy"/>
+            <artefact name="UnderwritingFormServiceDeployer" machine="ESB" type="deploy"/>
+            <artefact name="UnderwritingProcessServiceDeployer" machine="ESB" type="deploy"/>
+        </artefacts>
+    </environment>
+</environments>
