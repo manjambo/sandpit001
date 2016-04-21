@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest application="super-search" version="1.0.0">
+	<component name="SolrCoreDeployer-ClientCore" version="1.0.0" order="1"/>
+	<component name="UnderwritingSSearchAppDeployer" version="1.0.0" order="3"/>
+	<component name="UndewritingSSearchETLMSIPJobDeployer" version="1.0.0" order="2"/>
+	<component name="ESearch_loader" version="1.0.0" order="4"/>
+	<component name="SSearchMSIPLoader" version="1.0.0" order="5"/>
+</manifest>
